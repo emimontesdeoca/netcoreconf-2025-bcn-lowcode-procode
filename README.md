@@ -1,5 +1,6 @@
+<p align="center">
 <img align="center" src="https://imgur.com/5OdWAiz.png">
-
+</p>
 
 <h1 align="center">NetCoreConf Barcelona 2025</h1>
 
