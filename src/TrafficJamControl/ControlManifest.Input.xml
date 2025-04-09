@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+   <control namespace="NNNBC"
+      constructor="TrafficJamControl"
+      version="0.0.1"
+      display-name-key="TrafficJamControl"
+      description-key="TrafficJamControl description"
+      control-type="standard">
+      <type-group name="text">
+         <type>SingleLine.Text</type>
+      </type-group>
+      <property name="camValue"
+         display-name-key="TrafficJamValue"
+         description-key="Current traffic jam."
+         of-type-group="text"
+         usage="bound"
+         required="true" />
+      <resources>
+         <code path="index.ts"
+            order="1" />
+         <css path="css/TrafficJamControl.css"
+            order="1" />
+      </resources>
+   </control>
+</manifest>
+

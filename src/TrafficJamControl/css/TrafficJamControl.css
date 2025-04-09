@@ -1,0 +1,61 @@
+.NNNBC\.TrafficJamControl * {
+    text-align: left;
+ }
+ 
+ .NNNBC\.TrafficJamControl .entry {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+ }
+ 
+ .NNNBC\.TrafficJamControl .entry img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+ }
+ 
+ .NNNBC\.TrafficJamControl .entry-details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+ }
+ 
+ .NNNBC\.TrafficJamControl h1 {
+    margin: 0;
+ }
+ 
+ .NNNBC\.TrafficJamControl p {
+    margin: 0;
+ }
+ 
+ 
+ .NNNBC\.TrafficJamControl .iterations {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    gap: 0.125rem;
+ }
+ 
+ 
+ .NNNBC\.TrafficJamControl .iteration {
+    height: 30px;
+    width: 10%;
+    background-color: lightblue;
+    border-radius: 6px;
+ }
+ 
+ .NNNBC\.TrafficJamControl .green {
+    background-color: green;
+ }
+ .NNNBC\.TrafficJamControl .red {
+    background-color: red;
+ }
+ .NNNBC\.TrafficJamControl .orange {
+    background-color: orange;
+ }
+ 
