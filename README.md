@@ -12,8 +12,6 @@ This repository contains source code and presentation slides for the NetCoreConf
 
 A custom PowerApps Component Framework (PCF) control that visualizes traffic jam information with live camera feeds from different locations in Tenerife. This control displays traffic camera images along with traffic status indicators.
 
-![Traffic Jam Control Preview](https://via.placeholder.com/800x400?text=Traffic+Jam+Control)
-
 ## Project Overview
 
 This PCF component allows users to:
