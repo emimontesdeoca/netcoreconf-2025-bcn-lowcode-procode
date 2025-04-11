@@ -8,19 +8,19 @@ export class TrafficJamControl implements ComponentFramework.StandardControl<IIn
     private _refreshData: EventListenerOrEventListenerObject;
     private _entryDiv: HTMLDivElement | null = null; // Store reference to entry div
 
-    private _defaultImage: string = "http://cic.tenerife.es/e-Traffic3/data/camara-2701002-541.jpg?d=1744130153095{NoCacheParam}";
+    private _defaultImage: string = "https://cic.tenerife.es/e-Traffic3/data/camara-2701002-541.jpg?d=1744130153095{NoCacheParam}";
 
     private getImageForTrafficJam(value: string): string {
         const imageMap: { [key: string]: string } = {
-            "TV 5.8 Taco": "http://cic.tenerife.es/e-Traffic3/data/camara-2701001-30.jpg?d=1744132179263{NoCacheParam}",
-            "TV 5.10 Los Majuelos": "http://cic.tenerife.es/e-Traffic3/data/camara-2701002-1020.jpg?d=1744132186609{NoCacheParam}",
-            "TV 5.11 Chumberas": "http://cic.tenerife.es/e-Traffic3/data/camara-2701001-31.jpg?d=1744132193313{NoCacheParam}",
-            "TV 5.13 Guajara": "http://cic.tenerife.es/e-Traffic3/data/camara-2701001-41.jpg?d=1744132200611{NoCacheParam}",
-            "TV 5.26 Los Naranjeros": "http://cic.tenerife.es/e-Traffic3/data/camara-2701002-526.jpg?d=1744132207772{NoCacheParam}",
-            "TV 5.28 Tacoronte": "http://cic.tenerife.es/e-Traffic3/data/camara-2701002-528.jpg?d=1744132214991{NoCacheParam}",
-            "TV 5.42 Bomberos Orotava": "http://cic.tenerife.es/e-Traffic3/data/camara-2701002-542.jpg?d=1744132224697{NoCacheParam}",
-            "TV 5.44 Cuesta la Villa": "http://cic.tenerife.es/e-Traffic3/data/camara-2701002-544.jpg?d=1744132239977{NoCacheParam}",
-            "TV 5.46 Los Realejos": "http://cic.tenerife.es/e-Traffic3/data/camara-2701002-546.jpg?d=1744132247346{NoCacheParam}",
+            "TV 5.8 Taco": "https://cic.tenerife.es/e-Traffic3/data/camara-2701001-30.jpg?d=1744132179263{NoCacheParam}",
+            "TV 5.10 Los Majuelos": "https://cic.tenerife.es/e-Traffic3/data/camara-2701002-1020.jpg?d=1744132186609{NoCacheParam}",
+            "TV 5.11 Chumberas": "https://cic.tenerife.es/e-Traffic3/data/camara-2701001-31.jpg?d=1744132193313{NoCacheParam}",
+            "TV 5.13 Guajara": "https://cic.tenerife.es/e-Traffic3/data/camara-2701001-41.jpg?d=1744132200611{NoCacheParam}",
+            "TV 5.26 Los Naranjeros": "https://cic.tenerife.es/e-Traffic3/data/camara-2701002-526.jpg?d=1744132207772{NoCacheParam}",
+            "TV 5.28 Tacoronte": "https://cic.tenerife.es/e-Traffic3/data/camara-2701002-528.jpg?d=1744132214991{NoCacheParam}",
+            "TV 5.42 Bomberos Orotava": "https://cic.tenerife.es/e-Traffic3/data/camara-2701002-542.jpg?d=1744132224697{NoCacheParam}",
+            "TV 5.44 Cuesta la Villa": "https://cic.tenerife.es/e-Traffic3/data/camara-2701002-544.jpg?d=1744132239977{NoCacheParam}",
+            "TV 5.46 Los Realejos": "https://cic.tenerife.es/e-Traffic3/data/camara-2701002-546.jpg?d=1744132247346{NoCacheParam}",
         };
 
         return imageMap[value] || this._defaultImage; // Return the mapped image or default image
