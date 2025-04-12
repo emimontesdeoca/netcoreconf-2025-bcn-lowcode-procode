@@ -47,7 +47,7 @@ export class TrafficJamControl implements ComponentFramework.StandardControl<IIn
     private generateEntry(): void {
         // Limpiar el contenido previo
         if (this._entryDiv) {
-            this._container.removeChild(this._entryDiv);
+            // this._container.removeChild(this._entryDiv);
             this._entryDiv = null; // Clear the reference
         }
 
